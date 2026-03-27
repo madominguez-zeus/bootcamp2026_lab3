@@ -17,3 +17,9 @@ class Calculadora:
             raise ValueError("No se puede dividir por cero")
         return a / b
     
+    def obtener_valor(self):
+        if self.servicio_externo is not None:
+            return self.servicio_externo.obtener_valor()
+        else:
+            raise ValueError("No se ha proporcionado un servicio externo")
+        
