@@ -22,4 +22,9 @@ class Calculadora:
             return self.servicio_externo.obtener_valor()
         else:
             raise ValueError("No se ha proporcionado un servicio externo")
-        
+    
+    def otro_metodo(self):
+        if self.servicio_externo is not None:
+            return self.servicio_externo.otro_metodo()
+        else:
+            raise ValueError("No se ha proporcionado un servicio externo")
